@@ -11,41 +11,42 @@ char get_answer(int hp) {
 int main() {
     int hp = 35;
     char answer;
-    printf("Press p then enter at any time to get health.\n");
-    printf("\nHello random person I've never met!\n");
-    printf("\na:Hi!\n" "b:Gimmie all your money\n" "c:*ignore*\n");
+    printf("Press p then enter at any time to get health.\n\n\n");
+    printf("Hello random person I've never met!\n\n");
+    printf("a:Hi!\n" "b:Gimmie all your money\n" "c:*ignore*\n\n");
     answer = get_answer(hp);
     if (answer == 'a') {
-        printf("\n*you are liked more*");
+        printf("*you are liked more*");
         return 0;
     }
     if (answer == 'b') {
-        printf("\nno");
+        printf("no");
         return 0;
     }
     if (answer == 'c') {
-        printf("\nI'm SORRY did you not hear me?\n");
-        printf("a: sorry I didn't\n" "b:*ignore*\n");
+        printf("I'm SORRY did you not hear me?\n");
+        printf("a: sorry I didn't\n" "b:*ignore*\n\n");
     }
     answer = get_answer(hp);
     if (answer == 'a') { 
-        printf("\n*you stay the same friendship level*");
+        printf("*you stay the same friendship level*");
         return 0;
     }
     if (answer == 'b') {
-        printf("\nLISTEN TO ME!\n");
-        printf("a:listen\n""b:*ignore*\n");
+        printf("LISTEN TO ME!\n");
+        printf("a:listen\n""b:*ignore*\n\n");
     }
     answer = get_answer(hp);
     if (answer == 'a') {
-        printf("\n*you are disliked*");
+        printf("*you are disliked*");
         return 0;
     }
     if (answer == 'b') {
-        printf("\nTHIS IS THE LAST STRAW!!\n");
+        printf("THIS IS THE LAST STRAW!!\n");
         printf("*You are attacked by the person*\n");
-        printf ("-34 health");
-        printf("\n*Achievement unlocked! How am I still standing?* (be on 1 hp)");
+        printf("-34 health\n");
+        printf("Hp: %d\n", hp - 34);         
+        printf("*Achievement unlocked! How am I still standing?* (be on 1 hp)");
     }
 
     return 0;
