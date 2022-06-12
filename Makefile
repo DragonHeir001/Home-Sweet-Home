@@ -1,4 +1,4 @@
 make:
-	gcc main.c -o me;./me;
+	gcc main.c -o ie;./ie;
 clean:
-	rm me;
+	rm ie;
